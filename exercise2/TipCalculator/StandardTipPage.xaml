@@ -4,21 +4,6 @@
              x:Class="TipCalculator.StandardTipPage"
              Title="Standard Tip">
 
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <Color x:Key="bgColor">#C0C0C0</Color>
-            <Color x:Key="fgColor">#0000AD</Color>
-            <x:Double x:Key="fontSize">22</x:Double>
-
-            <Style TargetType="Label" x:Key="baseLabelStyle">
-                <Setter Property="FontSize" Value="{StaticResource fontSize}" />
-            </Style>
-            
-            <Style TargetType="Label" BasedOn="{StaticResource baseLabelStyle}" x:Key="infoLabelStyle">
-                <Setter Property="FontAttributes" Value="Bold" />
-            </Style>
-        </ResourceDictionary>
-    </ContentPage.Resources>
     <Grid x:Name ="LayoutRoot" BackgroundColor="{DynamicResource bgColor}" Padding="10"
           ColumnDefinitions="*, 3*"
           RowDefinitions="Auto, Auto, Auto, Auto, *">
